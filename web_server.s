@@ -188,8 +188,8 @@ _start:
 .section .data
 sock_addr:
         .2byte 2
-        .2byte 0x901f
-        .4byte 0x100007f
+        .2byte 0x901f     #Port: 8080
+        .4byte 0x100007f  #IP: 127.0.0.1 in Little Endian
         .8byte 0
 
 http_ok:
